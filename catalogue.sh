@@ -23,7 +23,7 @@ systemctl daemon-reload
 systemctl enable catalogue
 systemctl restart catalogue
 echo -e "\e[36m>>>>>> copy mongoDB repo <<<<<<<\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp  /home/centos/roboshop---shell/mongo.repo /etc/yum.repos.d/mongo.repo
 echo -e "\e[36m>>>>>> Install MongoDb Clint  <<<<<<<\e[0m"
 yum install mongodb-org-shell -y
 echo -e "\e[36m>>>>>> load schema <<<<<<<\e[0m"

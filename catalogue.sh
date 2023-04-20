@@ -12,4 +12,5 @@ systemctl enable catalogue
 systemctl restart catalogue
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
+
 mongo --host mongodb.madhavi924.online </app/schema/catalogue.js

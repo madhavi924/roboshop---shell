@@ -1,4 +1,4 @@
-echo -e "\e[36m>>>>>> configaration nodejs repos <<<<<<<\e[0m"
+echo -e "\e[36m>>>>>>configure node js repos <<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 echo -e "\e[36m>>>>>>install nodejs <<<<<<<\e[0m"
 yum install nodejs -y
@@ -15,7 +15,7 @@ unzip /tmp/user.zip
 echo -e "\e[36m>>>>>>install nodejs dependencies <<<<<<<\e[0m"
 
 npm install
-echo -e "\e[36m>>>>>>install redis repos <<<<<<<\e[0m"
+echo -e "\e[36m>>>>>>create application directory<<<<<<<\e[0m"
 cp /home/centos/roboshop---shell/user.service /etc/systemd/system/user.service
 echo -e "\e[36m>>>>>>start user service <<<<<<<\e[0m"
 systemctl daemon-reload
@@ -23,7 +23,7 @@ systemctl enable user
 systemctl start user
 echo -e "\e[36m>>>>>>copy mongodb repo  <<<<<<<\e[0m"
 cp /home/centos/roboshop---shell/mongo.repo /etc/yum.repos.d/mongo.repo
-echo -e "\e[36m>>>>>>install mongodb clint <<<<<<<\e[0m"
+echo -e "\e[36m>>>>>>install mongodb client <<<<<<<\e[0m"
 yum install mongodb-org-shell -y
 echo -e "\e[36m>>>>>>load schema <<<<<<<\e[0m"
 mongo --host mongodb.madhavi924.online </app/schema/user.js
